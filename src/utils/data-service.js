@@ -7,11 +7,11 @@ const API_BASE_URL = process.env.REACT_APP_API_URL;
 const getTeamData = (endpoint) => axios.get(`${API_BASE_URL}/${endpoint}`).then(res => res.data)
 
 const getTeamDepthData = (endpoint, data) => axios.get(`${API_BASE_URL}/${endpoint}`)
+// const getTeamDepthData = (endpoint, data) => axios.post(`${API_BASE_URL}/${endpoint}`,data)
 
 const getPlayerDepthData = (endpoint, data) => axios.get(`${API_BASE_URL}/${endpoint}`).then(res => res.data)
+// const getPlayerDepthData = (endpoint, data) => axios.post(`${API_BASE_URL}/${endpoint}`,data).then(res => res.data)
 
 const getPlayers = (endpoint) => axios.get(`${API_BASE_URL}/${endpoint}`).then(res => res.data)
 
-const getDatas = (endpoint) => axios.get(`${API_BASE_URL}/${endpoint}`).then(res => res.data);
-
-export { getTeamData, getTeamDepthData, getDatas, getPlayers, getPlayerDepthData }
+export { getTeamData, getTeamDepthData, getPlayers, getPlayerDepthData }

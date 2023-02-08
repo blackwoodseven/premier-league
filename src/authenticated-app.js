@@ -75,7 +75,7 @@ function AppRoutes() {
     for (let i = 0; i < RouteArray.length; i++) {
        routeList.push({ path: RouteArray[i].link, element: RouteArray[i].component })
     }
-    routeList.push({ path: '*', element: <NotFoundScreen /> });
+    routeList.push({ path: '*', element: <Teampage /> });
     let routes = useRoutes(routeList)
     return routes
  }
